@@ -1,0 +1,33 @@
+{
+  "name": "project_sequelize",
+  "version": "1.0.0",
+  "description": "<ul>     <li> npm init     <li> npm i sequelize     <li> npm i mysql2     <li> npm i express     <li> npm i jsonwebtoken     <li> npm i config     <li> npm i sequelize-hierarchy",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.9",
+    "sequelize-hierarchy": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-Daniel/webShop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-Daniel/webShop/issues"
+  },
+  "homepage": "https://github.com/just-Daniel/webShop#readme"
+}
