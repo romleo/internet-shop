@@ -83,7 +83,7 @@ const addOneOrMoreProducts = (id, addproduct, request) => {
 };
 
 
-const removeOneOrMoreProducts = (id, subtractproduct) => {
+const removeOneOrMoreProducts = (id, subtractProduct) => {
   const promise = new Promise((resolve, reject) => {
     ShopCart.findByPk(id, {
       include: [{
@@ -93,7 +93,7 @@ const removeOneOrMoreProducts = (id, subtractproduct) => {
     })
         .then((product)=> {
           if (product) {
-            let total = product.count - +subtractproduct;
+            let total = product.count - +subtractProduct;
 
             if (total > 0) {
               ShopCart.update({count: total}, {where: {id: product.id}})
@@ -127,7 +127,7 @@ const getAllProducts = () => {
 };
 
 
-const getCountsproducts = () => {
+const getCountsProducts = () => {
   const promise = new Promise((resolve, reject) => {
     ShopCart.findAll({
       attributes: [
